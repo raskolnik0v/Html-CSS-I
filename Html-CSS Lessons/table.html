@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style>
+		table,th,td  /*border yani çerçeve verdik sırayla table a sütunlara ve satırlara*/
+		{
+			border: 1px solid red;  /*1px ik kırmızı çerçeve ekledik*/
+
+		}
+		th,td
+		{
+			padding: 15px; /*th ve td yi 15 px kenarlardan boşluk bıraktırdık*/
+		}
+		th
+		{
+			text-align: left;  /*th olanları sola yasladık*/
+		}
+		table
+		{
+			border-spacing: 15px;  /*iki borde arası boşluk 15 px oldu table da */
+		}
+	</style>
+</head>
+<body>
+
+
+<table style="width: 100%;">  <!-- tüm sayfayı kapladı with etiketiyle -->
+	<caption>Öğrenci Listesi</caption>  <!-- tablo ismi kısmı caption etiketiyle -->
+	<tr>
+		<th>AD</th>
+		<th>SOYAD</th>
+		<th>YAŞ</th>
+	</tr>
+	<tr>
+		<td>ÖZAL</td>
+		<td rowspan="2">GÖKTAŞ</td><!--  rowspanla da yukardan aşağı hücre birleştirdik 2 tane-->
+		<td>29</td>
+	</tr>
+	<tr>
+		<td>DOĞUKAN</td>
+		
+		<td>15</td>
+	</tr> 
+		<tr>
+		<td>YAŞAR</td>
+		<td colspan="2">GÖKTAŞ</td>
+		<!-- colspanla yan yana hücre birleştirdik 2 tane -->
+ 		
+		<!-- burada yaş değeri yoksa ve soyadı hücresini yaşa kadar uzatmak istiyorsak colsapnla yapıcaz girilen değer kaç hücreyi birleştireceğimizdir -->
+	</tr>
+
+</table>
+
+
+</body>
+</html>

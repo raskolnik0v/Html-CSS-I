@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+<img src="237-536x354.jpg" width="550" height="350">
+<img src="866-536x354.jpg" width="550" height="350">
+
+<div style="padding-top: 50px;background-image: url('237-536x354.jpg') ;">
+	<p style="padding: 100px;">
+		
+	</p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+<!-- div etiketi belirli bir alan kapsamaya yarar burada lorem metnini belirlediğimiz img in üzerine yazdı-->
+
+<picture>
+	<source media="(min-with:650px)" srcset="237-536x354.jpg">
+	<source media="(min-with:465px)" srcset="866-536x354.jpg">
+</picture>
+<!-- picture etiketi img ye göre daha flexible belirlediğimiz iki img de 0-465 arası boyutlarda 866-536x354.jpg görünürken 650px ve üzerinde 237-536x354.jpg görünecek -->
+</body>
+
+
+</html>
