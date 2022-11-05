@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Margin</title>
+    <style>
+        .aaa{
+            border: 1x solid red;
+            /* margin-top: 100px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 10px; */
+
+            /* ister marginler tek tek yazılır ister tek satırda */
+            margin: 100px 50px 50px 10px;
+
+            /* margin: 90px; */
+            /* her kenardan eşit margin verilmek istenirse */
+            background-color: aquamarine;
+        }
+        h2{
+            margin-left: 50px;
+        }
+        .özl{
+            width: 300px;
+            border: 1px solid blue;
+            margin: auto;
+            /* margin auto otomatik her kenardan ortalar kendisi ayarlar */
+        }
+        div.a {
+            border: 2px solid purple;
+            margin-left: 100px;
+        }
+        .kkk{margin-left: inherit;
+            /* burada dıştaki etiket div olduğu için biz dive border ve margin verdik
+            içteki p ye inherit yaptığımızda dıştaki dive uyguladığımız ne varsa otomatik p ye de 
+            uygulanıyor.inherit bu işe yarar. */
+        }
+
+        h3{
+            margin: 0 0 50px 0;
+        }
+        /* çakışan margin değerlerinde hangisinin margini büyükse o geçerli olur */
+        h4{
+            margin: 20px 0 0 0 ;
+        }
+    </style>
+</head>
+<body>
+    <h2>Margin Özellikleri
+        <div class="aaa">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea officiis qui magni reprehenderit mollitia corrupti possimus vitae. Eligendi aperiam deserunt hic deleniti repudiandae eos minima libero odio aliquid vel quod sit in dolore reiciendis amet itaque, laboriosam debitis incidunt ullam nihil maiores aspernatur placeat ex!</div>
+        
+        
+        <div class="aaa">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea officiis qui magni reprehenderit mollitia corrupti possimus vitae. Eligendi aperiam deserunt hic deleniti repudiandae eos minima libero odio aliquid vel quod sit in dolore reiciendis amet itaque, laboriosam debitis incidunt ullam nihil maiores aspernatur placeat ex!</div>
+            
+        <div class="özl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea officiis qui magni reprehenderit mollitia corrupti possimus vitae. Eligendi aperiam deserunt hic deleniti repudiandae eos minima libero odio aliquid vel quod sit in dolore reiciendis amet itaque, laboriosam debitis incidunt ullam nihil maiores aspernatur placeat ex!</div>
+
+        
+
+    </h2>
+
+    <h2>Inherit Kullanımı
+        <div class="a">
+          <p class="kkk">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque possimus ratione perferendis ullam dolorem temporibus itaque.
+          </p>  
+        </div>
+    </h2>
+
+    <h3>KOMPLE WEB</h3>
+    <h4>KOMPLE WEB</h4>
+</body>
+</html>
