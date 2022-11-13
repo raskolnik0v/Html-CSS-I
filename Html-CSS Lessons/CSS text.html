@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-transform: uppercase; /*tüm harfleri büyük yaptık*/
+        }
+        p{
+            /* text-align: center; */
+            border: 1px solid red;
+        }
+        div{
+            text-align: justify; /*eşit genişlik*/
+        }
+
+        h2{
+            text-decoration: overline;
+            text-transform: lowercase; /*tüm harfleri küçük yaptı*/
+        }
+        h3{
+            text-decoration: line-through;
+            text-transform: capitalize; /*baş harfleri büyük yaptık*/
+        }
+        h4{
+            text-decoration: underline;
+        }
+        .özl{
+            text-indent: 150px; /*paragraf başında 150px boşluk bıraktı*/
+            letter-spacing: -1px; /* harfleri bir birine yaklaştırdı*/
+            line-height: 0.8;   /*satırlar arası boşluk*/
+
+
+        }
+        .aaa{
+            direction: rtl; /* parafgarf yön başlangıcı sağdan mı soldan mı*/
+            word-spacing: 10px;  /* kelimeler arası boşluk*/
+            text-shadow: 2px 2px red; /*gölgelendirme 5px dikeydeki gölgelendirme 2px yataydaki gökgelendirme red renk*/
+        }
+        .xxx{
+            direction: ltr;
+            word-spacing: -3px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Css Eğitimim</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Delectus quae sed fugit accusamus? Quisquam, dolorem? Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+
+    <h2>Wordpress Eğitimi</h2>
+    <h3>php Eğitimi</h3>
+    <h4>C# Eğitimi</h4>
+
+    <p class="özl">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos perferendis, aspernatur amet voluptates vel placeat repudiandae molestiae quam debitis, corporis rerum culpa? Et, praesentium ipsa illum, blanditiis optio iste iusto sed, libero nisi totam quod recusandae odit ex unde? Sit sed aut odit repellat delectus.
+    </p>
+
+    <p class="aaa">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, quaerat?
+    </p>
+    <p class="xxx">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, quaerat?
+    </p>
+
+</body>
+</html>
