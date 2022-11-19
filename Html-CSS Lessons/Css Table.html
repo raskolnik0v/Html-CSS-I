@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Table</title>
+
+    <style>
+
+        table{
+            border-collapse: collapse;/*hepsine ayrı ayrı değil tek border verdik*/
+            width: 100%; /*genişliği tüm alana yaydık*/
+        }
+        th{
+            height: 100px;
+            padding: 15px;
+            background-color: fuchsia;
+            color:white;
+        }
+        td{
+            text-align: center;
+            height: 50px;
+           /* vertical-align: bottom; /*dikey olarak aşağı yukarı onu belirler*/
+            padding: 15px;
+        }
+        /*hepsine border verdik*/
+        table,th,td{
+            /*border: 1px solid black;*/
+            border-bottom: 1px solid black;
+        }
+        tr:hover{background-color: blueviolet; /*üzerine gelindiği durumda rengi değişecek*/
+
+        }
+        tr:nth-child(even){
+            background-color: tomato;
+            color: white;
+        } /*tek satırları even çift satırları odd renkli boyuyor*/
+    </style>
+
+
+</head>
+<body>
+    <div style="overflow-x:auto"> 
+        <!-- tablo taşma durumunda div etiketi içine yazarak
+        overflow-x:auto yu kullanırsak scrawball gelir ve taşma yapmaz -->
+        <table>
+            <tr>
+                <th>İsim</th>
+                <th>Soyisim</th>
+                <th>Soyisim</th>
+                <th>Soyisim</th>
+                <th>Soyisim</th>
+                <th>Soyisim</th>
+                <th>Soyisim</th>
+                <th>Soyisim</th>
+                <th>Soyisim</th>
+                <th>Soyisim</th>
+                <th>Soyisim</th>
+                <th>Soyisim</th>
+                <th>Soyisim</th>
+                <th>Soyisim</th>
+                <th>Soyisim</th>
+
+            </tr>
+    
+            <tr>
+                <td>Özal</td>
+                <td>GÖKTAŞ</td>
+            </tr>
+    
+            <tr>
+                <td>Hasan</td>
+                <td>Hüseyin</td>
+            </tr>
+            <tr>
+                <td>Osman</td>
+                <td>YILMAZ</td>
+            </tr>
+            <tr>
+                <td>Murat</td>
+                <td>YILAR</td>
+            </tr>
+    
+        </table>
+    
+    
+    </div>
+
+</body>
+</html>
