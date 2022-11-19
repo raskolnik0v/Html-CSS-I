@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .imgbox{
+            /*display: inline-block; /*fotoları yan yana getirebilirdik*/
+            
+            float: left; /*ile de yan yana getirdik */
+            border: 1px solid black;
+            margin: 4px; /*dışardan 4px boşluk her taraftan*/
+            padding: 6px; /*çerden 6px boşluk her taraftan*/
+            width: 200px ;
+           
+        }
+        button{
+            width: 100%; /*button kapladı*/
+        }
+    </style>
+</head>
+<body>
+    <div class="imgbox" id="imgbox1">Resim 1 <br>
+        <img src="1.jpg" style="width:100%">
+        <button onclick="removeelement()">Kaldır</button>
+    </div>
+    <div class="imgbox" id="imgbox2">Resim 2 <br>
+        <img src="2.jpg" style="width:100%">
+        <button onclick="ChangeVisibility()">Gizle</button>
+    </div>
+    <div class="imgbox" id="imgbox3">Resim 3 <br>
+        <img src="3.jpg" style="width:100%">
+        <button onclick="resetelement()">Resetle</button>
+    </div>
+
+    <script>
+        function removeelement(){
+            document.getElementById("imgbox1").style.display="none"
+        }
+        function ChangeVisibility(){
+            document.getElementById("imgbox2").style.visibility="hidden"
+        }
+        function resetelement(){
+            document.getElementById("imgbox1").style.display="block"
+            document.getElementById("imgbox2").style.visibility="visible"
+        }
+    </script>
+</body>
+</html>

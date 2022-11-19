@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel</title>
+    <style>
+        #ccc,p{
+            font-size: 30px;
+            margin: auto;
+            background-color: aqua;
+            border: 1px solid red;
+            padding: 15px;
+            text-align: center;
+        }
+        #ccc{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p onclick="göster()">Paneli Göster</p>
+    <div id="ccc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quasi, deserunt fugiat odit minus, quia reiciendis nulla itaque velit placeat officiis earum aperiam aspernatur. Expedita non impedit est perspiciatis, atque nobis molestiae tempore laborum reiciendis sint sunt ea quidem pariatur quo enim quaerat iusto vero error adipisci repellat, possimus soluta suscipit. Repellat assumenda, minima corrupti sed at amet, dolorem est, ad facere autem reprehenderit error veniam neque voluptate accusantium iusto veritatis quaerat sapiente quibusdam! Assumenda omnis, vel corrupti voluptate placeat voluptatem expedita nobis inventore deserunt ab distinctio accusamus eligendi error nihil nemo asperiores quae facilis laboriosam modi, iste in reprehenderit nam porro! Dignissimos saepe, maiores soluta expedita facere dolorem eos? Quos possimus ipsa cum sed modi eius in qui culpa. In architecto harum ea dolore corporis consequatur, autem odio ipsa fugiat officiis quo. Beatae expedita voluptates, aperiam accusantium nemo inventore fuga explicabo consequatur necessitatibus fugit vitae ipsam tempora maiores veritatis!
+    </div>
+    <p onclick="gizle()">Paneli Gizle</p>
+
+    <script>
+        function göster(){
+            document.getElementById("ccc").style.display="block"
+
+        }
+        function gizle(){
+            document.getElementById("ccc").style.display="none"
+        }
+    </script>
+
+</body>
+</html>
