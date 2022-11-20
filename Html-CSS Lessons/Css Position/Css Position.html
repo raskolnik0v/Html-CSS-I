@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.static{
+            position:fixed; /*position:static olursa sağa sola kaymaz relative olursa kayabilir*/ 
+            border: 1px solid red;
+            /* left: 30px; pozisyonu soldan 30px kaydır */
+            /* top: 100px;pozisyonu yukardan 100px kaydır */
+            bottom: 0px;
+            right: 0px;
+            width: 500px;
+            
+        }
+        div.relative{
+            position: relative;
+            border: 2px solid red;
+            bottom: 0px;
+            right: 0px;
+            width: 500px;
+            height: 200px;
+        }
+        div.absolute{
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            border: 3px solid blue;
+            top: 80px;
+            right: 0px;
+        }
+        div.vvv{
+            position: sticky; /*position sticky yapışkan not gibi sayfa kaysa da üstte sabit durmasını sağlıyor*/
+            border: 2px solid blue;
+            background-color: cornflowerblue;
+            padding: 5px;
+            top:20px; /*sticky nin kaç pixel sonra aşağıda duracağını gösteriyor*/
+        }
+    </style>
+</head>
+<body>
+    <h2>Position Static</h2>
+    <div class="static">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae incidunt ut debitis, nemo possimus qui. Repellat ea accusantium officiis tempore, quidem nostrum sed harum soluta fuga nisi expedita unde illo voluptas nemo eos nam libero veritatis at corporis facere adipisci eligendi dolores eum modi. Minima deleniti mollitia commodi soluta facere eaque provident distinctio voluptate placeat pariatur eveniet modi totam voluptates repudiandae cum ab quaerat explicabo omnis, laborum est corrupti necessitatibus. Beatae sed consequuntur sapiente consequatur harum a eum alias delectus libero quo quidem aspernatur quasi facilis dicta natus hic, impedit in esse, nostrum repudiandae itaque, ducimus maiores pariatur! Quod aperiam qui fuga ullam quam distinctio error et adipisci non. Temporibus vitae praesentium suscipit quis quisquam maxime, consequatur soluta cumque minima voluptate aliquid, hic distinctio explicabo repudiandae molestiae facere officiis id illo omnis commodi? Dignissimos tenetur, maxime facere provident id, sunt earum consequatur cum natus minus ipsum atque. Incidunt, magnam modi.
+    </div>
+
+    <div class="relative">Relative
+       <div class="absolute">Absolute
+
+       </div>
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora soluta sint eveniet harum ullam!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci error, alias ea architecto animi totam.
+    </p>
+    <div class="vvv">
+        Ben Stickyim
+    </div>
+
+    <div style="padding-bottom: 2000px;">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quia maiores voluptates rerum fugiat quos repellendus magnam est, obcaecati eius sed id eaque eos cum, repudiandae quasi architecto suscipit necessitatibus. Deserunt provident ea soluta, odit impedit dolor aliquid quaerat quas hic a ipsam assumenda obcaecati consectetur quis. Placeat, fugit odit.
+    </div>
+
+   
+</body>
+</html>
