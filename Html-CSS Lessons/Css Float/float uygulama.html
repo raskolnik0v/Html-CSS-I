@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{box-sizing: border-box;}
+    .ccc{
+        float: left;
+        width: 33.33%;
+        border: 1px solid black;
+        padding: 50px;
+        text-align: center;
+    }
+    .xxx{
+        margin-bottom: 20px; /*burada yaptığımız padding float dan dolayı yansımadı vbunu yansıtmak için
+        yeni nesil temizleme;(clear) yöntemi olan etiketi kullancaz*/
+            }
+    .xxx::after{
+        content: "";
+        clear: both;
+        display: table;   /*şimd, uyguladığımız padding yansıdı bu clear yöntemiyle*/
+    }
+</style>
+<body>
+    <h2>Eşit Kutular</h2>
+    <div class="xxx">
+        <div class="ccc" style="background-color:salmon;">ÖZL</div>
+        <div class="ccc" style="background-color:salmon;">ÖZL</div>
+        <div class="ccc" style="background-color:salmon;">ÖZL</div>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut saepe asperiores tenetur velit eaque molestiae expedita sint, aperiam ex, delectus, voluptate minima nostrum iure ipsum esse eveniet! Sed iste provident dolore atque doloremque rem earum officiis accusamus corrupti beatae dignissimos praesentium tempore alias iusto temporibus tempora non debitis, expedita aspernatur quam sint commodi laboriosam! Adipisci molestias inventore maxime consequuntur minima dicta magnam odio ullam ducimus cumque alias corporis velit nulla, aliquid delectus aspernatur, nam at sint saepe molestiae voluptatem perferendis. Eius similique, sint a non magni rerum optio! Sit quasi quam culpa doloremque exercitationem illo iure magnam sapiente dolores earum?</p>
+</body>
+</html>
