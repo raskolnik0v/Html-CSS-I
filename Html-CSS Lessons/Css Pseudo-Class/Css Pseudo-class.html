@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{ /*henüz ziyaret edilmemiş link*/
+            color: red;
+        }
+        a:visited{
+            color: greenyellow; /*ziyaret edilmiş link*/
+        }
+        a:hover{
+            color:blue; /* link üzerine geldiğimizdeki rengi*/
+        }
+        a:active{
+            color: hotpink; /*tıklanırken ki oluşan renk*/
+        }
+        a.vvv:hover{
+            color: brown;
+        }
+        div.xxx{
+            background-color: greenyellow;
+            padding: 25px;
+            text-align: center;
+            
+        }
+        div.xxx:hover{ /*div in altındaki xxx clası üzerine geldiğinde rengi değişsin*/
+            background-color: cornflowerblue;
+        }
+
+
+
+
+        div.zzz:hover p{ /*div.zzz üzerine geldiğimizde p için display block verdik yani görünsün dedik*/
+            padding: 12px;
+            display: block;
+        }
+        p{
+            display: none; /* p etiketi görünmesin dedik bir üstte üzerine geldiğimizde gözüksün yapcaz*/
+            background-color: aqua;
+            padding: 25px;
+        }
+        /* class ları karışmasın diye verdil */
+    </style>
+</head>
+<body>
+    <h1>A etiketi Pseudo Class</h1>
+
+    <a href="https://www.google.com">Google</a>
+    <a class="vvv" href="#contact">Contact</a>
+
+    <div class="xxx">
+        Click Me
+    </div>
+
+    <div class="zzz">ÖZALI GÖRMEK İÇİN BURANIN ÜZERİNE GEL
+        <p>
+            Özal GÖKTAŞ
+        </p>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    div p{
+        background-color: aqua; /*div altındaki tüm p lere aqua verdi*/
+    }
+    div>p{
+        background-color: yellow;
+    } 
+    /*normalde div in altındaki tüm p leri seçer section da olsa 
+    section u seçmek istemiyorsak div>p kullanırız ve sadece p lere işlem yapar*/
+    div+p{
+        background-color: blue; /* divden sonraki ilk p ye mavi verdik*/
+
+    }
+    div~p{
+        background-color: red; /* div ile aynı seviyedeki p lere red verdik*/
+    }
+</style>
+
+</head>
+<body>
+    <div>
+    <p>Paragraf 1</p>
+    <p>Paragraf 2</p>
+    <section><p>Paragraf 3</p> </section>   
+    </div>
+
+    <p>Paragraf 4</p>
+    <p>Paragraf 5</p>
+
+</body>
+</html>

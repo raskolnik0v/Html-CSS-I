@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        P:first-child{ /*p nin içindeki 1 . ye red ver*/
+            color: red;
+        }
+        p i:first-child{ /* p nin içindeki ileri 1. olanlarına blue ver*/
+            color: blue;
+        }
+        p:first-child i{ /*p nin 1.sindeki i leri aqua yap*/
+            color:aqua;
+        }
+
+        q:lang(no){
+            quotes: "/" "/"; /*q içindeki lang ı no olanın normalde "" işareti olan quotes inin / yaptık*/
+        }
+
+    </style>
+</head>
+<body>
+    <p>Özal GÖKTAŞ
+        <i>ahmet</i>
+        <i>ahmet</i>
+        <i>ahmet</i>
+    </p>
+    <p>Özal GÖKTAŞ
+        <i>ahmet</i>
+        <i>ahmet</i>
+        <i>ahmet</i>
+    </p>
+    <p>Özal GÖKTAŞ
+        <i>ahmet</i>
+        <i>ahmet</i>
+        <i>ahmet</i>
+    </p>
+
+    <h1>
+        özal göktaş <q lang="no">français</q> anglais
+    </h1>
+</body>
+</html>
