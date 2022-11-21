@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        p:last-of-type{  /*last child ve last of type aynı şey
+            p nin içindeki sonucuya sadece backroundcolor verdik red*/
+            background-color: red;
+        }        
+        p{
+            background-color: yellow; /* p lere yellow verdik*/
+        }
+        :not(p){ /*p olmayanlara aqua verdik geriye kalan hepsi ,not(p) p olmayanlar*/
+            background-color: aqua;
+        }
+        p:nth-child(2){
+            background-color: orange; /*nth-child istediğimiz baştan istediğimiz childa işlem yapmamızı sağlıyor
+            first ve last child dışında kalanlara*/
+        }
+        p:nth-last-of-type(2){
+            background-color:blueviolet; /*sondan ikinciye backround color verdik*/
+        }
+
+
+        /* first child çalışıyor last child çalışmadı onun yerine last of type kullandık
+        :nth-child() çalıştı :nth-last-child() çalışmadı onun yerine :nth-last-of-type( kullandık) */
+        
+        h3:only-child{ /* iki div var ve içinde toplam 3 tane h3 var only child
+            ya da only of type dediğimizde tek olan h3 ü seçti 2. ve 3. h3 backroundan etkilenmedi*/
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+<div>
+    <h1>özal</h1>
+    <h2>azl</h2>  
+</div>
+
+<br>
+
+<div><h3>göktaş</h3></div>
+<div><h3>göktaş <h3>özal</h3></h3></div>
+
+</body>
+</html>

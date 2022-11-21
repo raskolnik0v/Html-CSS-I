@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:optional{
+            background-color: yellow;
+            /*inputun optional olduğı durumlarda backround yellow*/
+        }
+        input:required{ 
+            /*inputun required yani zorunlu olduğu durumlarda backround hotpink */
+            background-color: hotpink;
+        }
+
+        input:out-of-range{ /*döngü yani range dışındaysa backround u red olur*/
+            background-color: red;
+        }
+        input:in-range{ /*in range olunca green*/
+            background-color: yellowgreen;
+        }
+        input.xx:read-only{
+            background-color: grey; /*read only olan durumlarda backroundu grey yaptık yani giriş yok*/
+        }
+        input.xx:read-write{ /*read only olmayan yani girdi yapılabilen durumlardakilerin rengi aqua oldu*/
+            background-color: aqua;
+        }
+        :root{ /*root ile  yaptığımız işlem tüm html etiketleri için geçerli olur hepsinin 
+            backround color u aynı oldu ayrı ayrı css verdiklerimizde root geçersiz* geriye kalanlarda yani css
+            vermediklerimizin hepsinde geçerli*/
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    
+    AD <input type="text"> <br>
+    SOYAD <input type="text" required>
+    <!-- required girilmesi zorunlu alan -->
+    <br>
+    <br>
+
+    <input type="number" min="5" max="15" value="20">
+
+    <br>
+    <br>
+
+    <input class="xx" type="text" readonly value="özal"> <br> 
+    <!-- buradaki readonly olduğu için girdi yapamıyoruz -->
+    <input class="xx" type="text" value="özal göktaş">
+
+    <br>
+    <p>özal</p>
+    <div>göktaş</div>
+    
+</body>
+</html>

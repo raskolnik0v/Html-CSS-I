@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:checked{ /*inputun check olduğu durumlarda height ve with değerleri 50px */
+            height: 50px;
+            width: 50px;
+        }
+        input[type=text]:enabled{ /*enable olanların backround u red*/
+            background: red ;
+        }
+        input[type=text]:disabled{/*disable olanların backround u gri oldu*/
+            background:grey ;
+        }
+
+        p:empty{ /*p nin içindeki boş(empty) olanın with height ve backroundunu girdik*/
+            width: 150px;
+            height: 50px;
+            background-color: red;
+        }
+        p:first-of-type{ /*p nin içindeki 1.ciye backroundcolor verdik sadece first child ın aynısı*/
+            background-color: greenyellow;
+        }
+
+        input.cc:in-range{
+            border: 3px solid blue; /*in range yani verilen max ve min değerleri arasındaysa rengi blue yap dedik*/
+
+        }
+        input.xx:invalid{ /*burada input değerijne girdiğimiz e mail doğru yazılmazsa grey gösterecek*/
+            border: 4px solid grey;
+        }
+        input.xx:valid{ /*burada input içindeki e mail i doğru yazarsak yeşil olacak*/
+            border: 4px solid yellowgreen;
+        }
+        h3:last-child{
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="radio" checked="checked" value="Erkek" name="Cinsiyet">
+        <input type="radio" value="Kadın" name="Cinsiyet">
+        <input type="checkbox" checked="checked" value="Bisiklet">
+        <input type="checkbox" value="Araba">
+    </form>
+
+    <form action="">
+        AD SOYAD:<input type="text" checked="checked" value="ÖZAL GÖKTAŞ"><br>
+        MAHALLE:<input type="text" value="MECİDİYE"><br>
+        SEMT:<input type="text" value="ORTAKÖY"><br>
+        İLÇE:<input type="text" disabled="disabled" value="BEŞİKTAŞ">
+    </form>
+
+    
+
+    <p>SİVAS</p>
+    <p></p>
+    <p>ÖZAL</p>
+    <p>GÖKTAŞ</p> 
+
+    <input class="cc" type="number" max="10" min="0" value="9"> 
+    <br>
+    <br>
+
+    <input class="xx" type="email" value="simbillicem@yandex.com">
+    <input class="xx" type="email" value="simbillicem.com">
+
+
+
+</body>
+</html>
