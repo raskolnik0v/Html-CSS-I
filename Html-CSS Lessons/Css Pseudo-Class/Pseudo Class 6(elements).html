@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.can::first-line{  /*ilk satıra color verdik*/
+            color: red;
+        }
+        p.can::first-letter{
+            font-size: xx-large; /*ilk harfi büyüttük ve ilk harfe blue verdik*/
+            color: blue;
+        }
+        p.özl::first-line{
+            color: lightskyblue;
+            font-variant: small-caps;
+
+        }
+        p.özl::after{ /*p den sonra özal göktaş ekledik p ye */
+            content: "özal göktaş";
+        }
+        p.özl::before{
+            content: "göktaş göktaş";
+        }
+        ::selection{ /*yazımızı seçtiğimizdeyazımızın rengi kırmızı backroundu yellow oldu*/
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    
+    <p class="can">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis repellendus cupiditate eveniet iusto aliquid provident sequi aperiam numquam sunt quae eum, corrupti esse ex at aspernatur deserunt nesciunt temporibus, delectus, magnam eaque perspiciatis cumque amet quis placeat! Qui quos libero tenetur odio officia est harum amet perferendis recusandae debitis, ex incidunt praesentium commodi adipisci ducimus consequuntur porro magnam! Maiores, hic ab! A quasi ratione quae corporis corrupti, rem modi officia, voluptates iste distinctio veniam odit alias, ut molestias numquam! Adipisci, molestias accusantium, quibusdam amet culpa cum eaque id consequuntur hic quas consectetur iste? Vel voluptas placeat harum cumque, ipsum consequuntur?
+
+    </p>
+    <p class="özl">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni debitis dolores illo obcaecati autem, animi rem nulla inventore cumque minima distinctio quis harum in? Pariatur quas voluptatum adipisci! Aliquam, sapiente? Dicta quisquam sequi dolorem fugit a, expedita tempore eos deleniti, cum at obcaecati consectetur tenetur et rem sed magni fugiat!
+    </p>
+
+</body>
+</html>
