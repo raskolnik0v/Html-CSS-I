@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            counter-reset: x; /*counter reset sayacı sıfırlamak yani 1 den başlatmak*/
+        }
+        h1{
+            counter-reset: y; /*hem body yi hem h1 i resetledik doğru sayması için*/
+        }
+        h1::before{
+            counter-increment: x;
+            content: "Section " counter(x) ". ";
+        }
+        h2::before{
+            counter-increment: y; /*counter increment sayacın başlangıcı yani 1*/
+            content:  counter(x) "." counter(y) ". "; /*content sayac başaldığında ne yazacak*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Html-Css Eğitimim</h1>
+    <h2>Html Eğitimim</h2>
+    <h2>Css Eğitimim</h2>
+
+    <h1>Script Eğitimim</h1>
+    <h2>JavaScript Eğitimim</h2>
+    <h2>VBScribt Eğitimim</h2>
+
+
+</body>
+</html>
