@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a[target]{ /*burada targeti olanlara backround color verdik*/
+        background-color: aquamarine;
+    }
+    a[target=_blank]{ /*burada targeti blank olanlara backround verdik*/
+        background-color: red;
+    }
+
+    [title~=özl]{/*title ında özl geçenlere backroundcolor verdik*/
+        background-color: blue;
+    }
+</style>
+<body>
+    <a href="https://www.google.com/" title="özl">Google</a>
+    <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+    <a href="https://www.sozcu.com.tr/"target="_top">Sözcü</a>
+    <a href="https://app.patika.dev/" target="_self">Patika</a>
+    
+</body>
+</html>

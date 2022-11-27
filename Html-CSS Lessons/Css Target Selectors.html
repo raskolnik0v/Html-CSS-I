@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Target</title>
+    <style>
+
+        /* tar classının altındaki p lere target verdik*/
+        .tar p:target{
+            border: 1px solid red;
+            background-color: aquamarine;
+            text-align: center;
+            padding: 10px 5px;
+        }
+
+        /*.tab classının ın altındaki div başta diplay none olsun*/
+        .tab div{
+            display: none;
+        }
+        /* tab classının altındaki div target verdik ve tıklayınca gözüksün*/
+        .tab div:target{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+  <div class="tar">
+    <p><a href="#özl1">1.İçerik</a></p>
+    <p><a href="#özl2">2.İçerik</a></p>
+
+    <p id="özl1">özal </p>
+    <p id="özl2">özal göktaş</p>
+  </div>
+    
+    
+<br><br>
+
+<div class="tab">
+
+    
+        <a href="#link1">Link 1</a>
+        <a href="#link2">Link 2</a>
+        <a href="#link3">Link 3</a>
+    
+
+    <div id="link1">
+        <h1>özal</h1>
+    </div>
+    <div id="link2">
+        <h1>Özal GÖKTAŞ</h1>
+    </div>
+    
+    <div id="link3">
+        <h1>CEM GÖKTAŞ</h1>
+    </div>
+
+</div>
+
+
+</body>
+</html>

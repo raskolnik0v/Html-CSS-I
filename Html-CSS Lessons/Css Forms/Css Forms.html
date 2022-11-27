@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input[type=text] /*type ı text olan inputlara css verdik*/
+        {
+            width: 200px;
+            padding: 12px 15px 12px 45px;
+            margin: 18px 0;
+            border: 3px solid red;
+            box-sizing: border-box;
+            border-radius: 14px;
+            background-color: bisque;
+            color: blueviolet;
+            background-image: url(12.png);
+            background-repeat: no-repeat;
+            background-position: 5px;
+            
+            
+        
+        }
+
+        input[type=text]:focus{ /* input un typenın text olduğu durumlarda 
+            focus yani tıkladığımızda  backround color ı black yaptık */
+            background-color: rgb(236, 131, 131);
+            width: 100%; }
+            
+            /*üzerine tıkladığımızda width i100 de 100oluyor search barın */
+
+        textarea{
+            width: 100%;
+            height: 160px;
+            border: 2px  dotted salmon;
+            /* resize: none; dersek text area nın yeniden boyutlandıralabilir özelliğini kapatmış oluruz */
+        }
+        select{
+            width: 100%;
+            padding: 10px 15px;
+            border: 2px solid yellowgreen;
+            border-radius: 5px;
+            background-color: darkkhaki;
+            color: white;
+
+        }
+        input[type="button"],input[type="reset"],input[type="submit"]
+        {
+            padding: 16px 25px;
+            background-color: greenyellow;
+            border: none;
+            margin: 5px 3px;
+            cursor: pointer;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <!-- placeholder earch barın içine yazdığımız yönlendirme adınızı giriniz search falan  -->
+    <form>
+        <label for="özl">Adınızı Giriniz </label>
+        <input type="text" name="özl" placeholder="Search..">
+
+      
+        <label for="gök">Soyadınızı Giriniz</label>
+        <input type="text" name="gök" placeholder="soyadınızı giriniz...">
+
+        <textarea> ÖZAL GÖKTAŞ  ......</textarea>
+
+        <select name="Ülke" id="">
+            <option value="TR">TÜRKİYE</option>
+            <option value="FR">FRANCE</option>
+            <option value="ENG">ENGLAND</option>
+        </select>
+<br><br><br>
+
+        <input type="button" value="Button">
+        <input type="reset" value="RESET">
+        <input type="submit" value="GÖNDER">
+    </form>
+</body>
+</html>
