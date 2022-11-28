@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{box-sizing: border-box;}
+        .header{
+            padding: 25px;
+            background-color:white;
+            text-align: center;
+        }
+        body{
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-family: Arial;
+        }
+        .nav{
+            overflow: hidden;
+            background-color: black;
+        }
+        .nav a{
+            padding: 15px 17px;
+            float: left;
+            text-decoration: none;
+            color: white;
+            
+        }
+        .nav a:hover{
+            background-color: grey;
+        }
+        .left{
+            float: left;
+            width: 75%;
+        }
+        .right{
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+        .card{
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .fakeimg{
+            background-color: #aaa;
+            padding: 30px;
+            width: 100%;
+        }
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer{
+            background-color: #ddd;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        @media only screen and (max-width: 800px)
+        { .right,.left{
+            width: 100%;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>Resize the browser window to see the responsive effect</p>
+   </div>
+
+    <div class="nav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#" style="float:right ;">Link</a>
+    </div>
+
+    <div class="row">
+        <div class="left">
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description,Dec 7,2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some Text..</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora illum neque minima hic repellat, libero labore. Ut dolorum amet accusantium animi quo quaerat repudiandae!?</p>
+            
+            </div>
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description,Dec 7,2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some Text..</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora illum neque minima hic repellat, libero labore. Ut dolorum amet accusantium animi quo quaerat repudiandae!?</p>
+            </div>
+
+            
+        </div>
+
+        <div class="right">
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height:100px">Image</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quia.</p>
+            </div>
+
+            <div class="card">
+                <h2>Popular Post</h2>
+                <div class="fakeimg">Image</div>
+                <div class="fakeimg">Image</div>
+                <div class="fakeimg">Image</div>
+                
+            </div>
+
+            <div class="card">
+                <h2>Follow Me</h2>
+                <p>Lorem, ipsum dolor...</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webside</title>
+
+     <style>
+        *{box-sizing:border-box;}
+        .header{
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 25px;
+        }
+        .nav{
+            overflow: hidden;
+            background-color: black;
+        }
+        .nav a{
+            padding: 15px 17px;
+            float: left;
+            text-decoration: none;
+            color: white;
+            
+        }
+        .nav a:hover{
+            background-color: grey;
+        }
+        .column{
+            float: left;
+            padding: 15px;
+        }
+        .column.side{
+            width: 25%;
+        }
+        .column.main{
+            width: 50%;
+        }
+        .row::after{  /*bunu footerı float left yapmasın diye yazdık ve hackledik*/
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer{
+            background-color:#f1f1f1;
+            text-align: center;
+            padding: 15px;
+        }
+        @media only screen and (max-width: 600px){
+            .column.side{
+                width: 100%;
+            }
+            .column.main{
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Header</h1>
+        <p>Resize the browser window to see the responsive effect</p>
+    </div>
+
+    <div class="nav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+
+    <div class="row">
+        <div class="column side">
+            <h2>Side</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, est!</p>
+        </div>
+
+        <div  class="column main">
+            <h2>Main Content</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui ipsa debitis magnam autem accusantium necessitatibus excepturi fugit architecto provident, itaque error laborum ipsam incidunt eaque possimus similique quis. Tempore et aspernatur placeat dignissimos consequatur porro quae possimus quam? Consequuntur velit animi pariatur vero, eos laborum blanditiis nobis quisquam excepturi accusantium.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ipsam at eos beatae autem totam ratione accusantium nisi magni cumque harum reprehenderit quae velit sed, ab labore earum odit ut rerum! Inventore, hic enim. Animi ipsam quibusdam recusandae sed veritatis amet saepe repellat mollitia facilis vero, exercitationem, consequuntur quia quis.</p>
+        </div>
+
+        <div  class="column side">
+            <h2>Side</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, neque!</p>
+        </div>
+
+             
+    </div>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+
+  
+
+
+   
+
+</body>
+</html>
